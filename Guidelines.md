@@ -59,6 +59,7 @@
     - *Select "Tiramisu" with an API Level of "33" then click next and finish*
     - *Launch the emulator and let it run.*
 
+---
 
 ### Project creation
 1. *Find a place you'd like to create your app. navigate to that folder using CD in the Command line, then type the following* <br/>
@@ -67,6 +68,8 @@
     - *Once your project is installed type the following in the CLI:* <br/>
     `npx react-native run-android`
     - *If everything has worked correctly your project will be shown on the emulated android*
+
+---
 
 ### Troubleshooting
 1. *If you had the app say "error Failed to install the app." and had it prompt you with the following:* <br/>
@@ -80,6 +83,8 @@
             - *in my case I unchecked 30.0.3*
         4. *Run the following in the CLI if your project again and let it re-download the files needed* <br/>
             `npx react-native run-android`
+
+---
 
 ### Resources
 1. *You can use the following links for a more in-depth guide to installing React-Native:* <br/>
