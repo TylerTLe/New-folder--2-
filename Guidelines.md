@@ -10,12 +10,12 @@
 ---
 
 ### Installation instructions
-1. *Install Chocolatey by opening up powershell and running the following command*
+1. *Install Chocolatey by opening up powershell and running the following command:* <br/>
     `Get-ExecutionPolicy`
     - *If it returns Restricted, then run Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process.*
-    - *next run the following command*
+    - *next run the following command:* <br/>
     `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
-2. *Install NODE.js and Java SE Development Kit (JDK) using the following command*
+2. *Install NODE.js and Java SE Development Kit (JDK) using the following command:* <br/>
     `choco install -y nodejs-lts microsoft-openjdk11`
 3. *Install Android Studio*
     - *While on Android Studio installation wizard check the following items*
@@ -34,19 +34,19 @@
 6. *Set up Environment variables*
     - *press the windows key, search and press "edit the systems environment variables"*
     - *Navigate to environment variables...*
-    - *Click on New... and create a new variable with the following.*
+    - *Click on New... and create a new variable with the following:* <br/>
     `Variable name: ANDROID_HOME`
-    - *The Variable value: can be found in Android Studio "Settings" dialog, under Languages & Frameworks → Android SDK. and should look like the following*
+    - *The Variable value: can be found in Android Studio "Settings" dialog, under Languages & Frameworks → Android SDK. and should look like the following:* <br/>
     `C:\Users\Tyler\AppData\Local\Android\Sdk`
-    - *you can also find the default location of the SDK install at the following location*
+    - *you can also find the default location of the SDK install at the following location:* <br/>
     `%LOCALAPPDATA%\Android\Sdk`
     - *To make sure you correctly set up your environment variables do the following*
         1. *Open powershell*
-        2. *Copy and paste the following into powershell*
+        2. *Copy and paste the following into powershell:* <br/>
             `Get-ChildItem -Path Env:\`
         3. *Verify ANDROID_HOME has been added*
 7. *Add platform-tools to Path*
     - *In the same window you added your environment variables Select the Path variable.*
     - *Click edit*
-    - *Click new and add same file path you added as the variable value but with \platform-tools at the end. it should look like the following*
+    - *Click new and add same file path you added as the variable value but with \platform-tools at the end. it should look like the following:* <br/>
         `C:\Users\Tyler\AppData\Local\Android\Sdk\platform-tools`
